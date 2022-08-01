@@ -1,0 +1,214 @@
+@import url(../vendor/normalize.css);
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    background: #2A2C2F;
+}
+
+.page {
+    margin: 0 auto;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.header {
+    margin: 28px 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_lang-link {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    align-self: center;
+}
+
+.lead {
+    width: 984px;
+    margin: auto;
+}
+
+.lead_title {
+    width: 720px;
+    height: 200px;
+    margin: 56px auto 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lead_subtitle {
+    width: 640px;
+    height: 72px;
+    margin: 32px auto 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lead_image {
+  margin: 64px auto 0;
+  position: relative;
+}
+
+.lead_image_svg {
+  width: 887px;
+  height: 226px;
+  position: absolute;
+  z-index: 1;
+  top: 128.61px;
+  left: 41.5px;
+}
+
+.lead_caption {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.intro {
+  max-width: 690px;
+}
+
+.intro_title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-top: 92px;
+}
+
+.intro_text {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.intro_list {
+  list-style: none;
+  margin-top: 33px;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.photo-grid {
+  max-width: 1184px;
+  display: grid;
+  gap: 16px;
+  margin: 92px auto;
+  grid-template-columns: repeat(auto-fit, 284px);
+  grid-auto-flow: row;
+  justify-content: center;
+}
+
+.places {
+  max-width: 984px;
+  margin: auto;
+}
+
+.places_place {
+  display: grid;
+  /*grid-template-areas:
+  "title website"
+  "image paragraph";*/
+  grid-template-columns: 460px minmax(min-content, max-content);
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  column-gap: 40px;
+  row-gap: 48px;
+  margin-bottom: 80px;
+}
+
+.places_place_title {
+  /*grid-area: title;*/
+  grid-row: 1;
+  grid-column: 1;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #FFFFFF;
+  align-self: end;
+  margin: 0;
+}
+
+.places_place_image {
+  /*grid-area: image;*/
+    grid-row-start: 2;
+    /*grid-row-end: span 2;*/
+}
+
+.places_place_website {
+  /*grid-area: website;*/
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
+}
+
+.places_place_website_url-heading {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+
+.places_place_website_link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.places_place_paragraph {
+  /*grid-area: paragraph;*/
+  grid-column: 2;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #FFFFFF;
+  align-self: start;
+  margin: 0 0 26px;
+}
